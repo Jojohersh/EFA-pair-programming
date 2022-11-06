@@ -26,7 +26,7 @@ public abstract class Character
       Recipient.HP -= damageDealt;
       System.Console.WriteLine($"{Name} dealt {damageDealt} damage to {Recipient.Name}");
     } else {
-      System.Console.WriteLine($"{Name} just barely missed {Recipient.Name}!");
+      System.Console.WriteLine($"{Name} attacks, and just barely missed {Recipient.Name}!");
     }
     System.Console.WriteLine($"{Recipient.Name} has {Recipient.HP} HP remaining");
   }
@@ -35,6 +35,7 @@ public abstract class Character
     IsBlocking = true;
     Defense += 3;
     Speed+=3;
+    System.Console.WriteLine($"{Name} hunches down, bracing for an oncoming attack...");
   }
 
   public void EndBlocking() {
