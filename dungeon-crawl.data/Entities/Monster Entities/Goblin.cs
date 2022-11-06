@@ -1,14 +1,12 @@
 
 public class Goblin : Monster
 {
-    public Goblin()
+    public Goblin(string name)
     {
-        Name="Generic Goblin";
+        Name=name;
         Attack=8;
         Defense=6;
         Speed=15;
         HP=20;
-        System.Console.WriteLine($"Goblin:{Name}");
-        DisplayStats();
     }
 }

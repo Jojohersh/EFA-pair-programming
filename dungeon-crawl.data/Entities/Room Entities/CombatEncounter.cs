@@ -9,7 +9,7 @@
             Enemy = enemy;
         }
         public static bool RunCombat(Character player,Character enemy) {
-            System.Console.WriteLine($"{player.Name} has to fight {enemy.Name}");
+            System.Console.WriteLine($"\n{player.Name} has to fight {enemy.Name}\n");
             // begin combat loop
             while (player.IsAlive && enemy.IsAlive) {
                 System.Console.WriteLine("What would you like to do?\n1. Attack\n2. Block");
